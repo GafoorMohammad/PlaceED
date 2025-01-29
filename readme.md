@@ -1,21 +1,13 @@
 ## **📌 Placement Prediction Web App**
 A Flask-based web application that predicts whether a student will be **placed** or **not placed** based on academic and extracurricular factors using **Machine Learning**.
 
-![Flask Web App Screenshot](https://via.placeholder.com/800x400?text=Flask+Placement+Prediction)  
-*(Replace the above link with an actual screenshot of your app)*
-
 ---
 
 ## **📖 Features**
 ✅ Predicts **student placement status** based on CGPA, internships, projects, etc.  
-✅ Uses a trained **MLPClassifier (Neural Network)** for prediction  
+✅ Uses a trained **XGBoost Classifier** for prediction  
 ✅ **User-friendly web interface** with Flask  
 ✅ Can be **deployed on Render, PythonAnywhere, or AWS**  
-
----
-
-## **🚀 Live Demo**
-🔗 **[Try it here](#)** *(Replace with deployed link if available)*  
 
 ---
 
@@ -81,15 +73,6 @@ The app will be running at **`http://127.0.0.1:5000/`** 🚀
 2. SSH into the instance and install dependencies  
 3. Run the app using **Gunicorn**  
 4. Open port **5000** in security settings  
-
----
-
-## **📷 Screenshots**
-| Input Form | Prediction Result |
-|------------|------------------|
-| ![Form](https://via.placeholder.com/400x300?text=Input+Form) | ![Result](https://via.placeholder.com/400x300?text=Prediction+Result) |
-
-*(Replace the above links with actual screenshots)*  
 
 ---
 
