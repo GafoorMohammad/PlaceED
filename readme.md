@@ -36,8 +36,11 @@ python app.py
 The app will be running at **`http://127.0.0.1:5000/`** 🚀  
 
 ---
+📂 Dataset
+The dataset used for training the model can be found on Kaggle:
+🔗 Placement Prediction Dataset
 
-## **📊 Input Features Used**
+📊 Dataset Features
 | Feature                 | Description |
 |-------------------------|------------|
 | CGPA                    | Cumulative Grade Point Average |
@@ -50,7 +53,7 @@ The app will be running at **`http://127.0.0.1:5000/`** 🚀
 | Placement Training      | Yes/No |
 | SSC Marks              | 10th-grade percentage |
 | HSC Marks              | 12th-grade percentage |
-
+🔹 Note: You may need a Kaggle account to download the dataset.
 ---
 
 ## **📡 Deployment**
