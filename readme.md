@@ -96,8 +96,8 @@ This project is **open-source** under the **MIT License**.
 ---
 
 ## **📞 Contact**
-📧 Email: your.email@example.com  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
+📧 Email: abdulgafoormd.work@gmail.com  
+
 
 ---
 
