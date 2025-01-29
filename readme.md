@@ -39,7 +39,7 @@ The app will be running at **`http://127.0.0.1:5000/`** 🚀
 ### **📂 Dataset**
 The dataset used for training the model can be found on Kaggle:
 
-🔗 Placement Prediction Dataset
+🔗 **[Placement Prediction Dataset](https://www.kaggle.com/datasets/ruchikakumbhar/placement-prediction-dataset/data)**
 
 ### **📊 Dataset Features**
 | Feature                 | Description |
