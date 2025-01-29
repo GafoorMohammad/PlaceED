@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Placement Prediction</h1>
+        <form method="POST">
+            <label for="CGPA">CGPA:</label>
+            <input type="number" step="0.1" id="CGPA" name="CGPA" placeholder="Enter CGPA (0-10)" min="0" max="10" required>
+
+            <label for="Internships">Number of Internships:</label>
+            <input type="number" id="Internships" name="Internships" placeholder="Enter number of internships" min="0" required>
+
+            <label for="Projects">Number of Projects:</label>
+            <input type="number" id="Projects" name="Projects" placeholder="Enter number of projects" min="0" required>
+
+            <label for="Workshops">Number of Workshops/Certifications:</label>
+            <input type="number" id="Workshops" name="Workshops" placeholder="Enter number of workshops" min="0" required>
+
+            <label for="AptitudeTestScore">Aptitude Test Score:</label>
+            <input type="number" id="AptitudeTestScore" name="AptitudeTestScore" placeholder="Enter test score (0-100)" min="0" max="100" required>
+
+            <label for="SoftSkillsRating">Soft Skills Rating (0-5):</label>
+            <input type="number" step="0.1" id="SoftSkillsRating" name="SoftSkillsRating" placeholder="Rate soft skills (0-5)" min="0" max="5" required>
+
+            <label for="ExtracurricularActivities">Extracurricular Activities:</label>
+            <select id="ExtracurricularActivities" name="ExtracurricularActivities" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="PlacementTraining">Placement Training:</label>
+            <select id="PlacementTraining" name="PlacementTraining" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="SSC_Marks">SSC Marks:</label>
+            <input type="number" id="SSC_Marks" name="SSC_Marks" placeholder="Enter SSC marks (0-100)" min="0" max="100" required>
+
+            <label for="HSC_Marks">HSC Marks:</label>
+            <input type="number" id="HSC_Marks" name="HSC_Marks" placeholder="Enter HSC marks (0-100)" min="0" max="100" required>
+
+            <button type="submit">Predict Placement</button>
+        </form>
+
+        {% if result %}
+            <div class="result-card">
+                <h2>Prediction Result: <span class="{{ 'placed' if result == 'Placed' else 'not-placed' }}">{{ result }}</span></h2>
+                <h3>Entered Details:</h3>
+                <ul class="details-list">
+                    {% for key, value in entered_values.items() %}
+                        <li><strong>{{ key.replace('_', ' ').title() }}:</strong> {{ value }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
